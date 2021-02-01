@@ -10,9 +10,9 @@ month = 2
 day = 1
 
 def test_code():
-    assert nthLetter("qwertyuiop", 5) == 't', 'nthLetter("qwertyuiop", 5) == "t" failed'
-    assert nthLetter("cat", 4) == False, 'nthLetter("cat", 5) == False failed'
-    assert nthLetter("discount", 0) == 'd', 'nthLetter("discount", 0) == "d" failed'
+    assert main.nthLetter("qwertyuiop", 5) == 't', 'nthLetter("qwertyuiop", 5) == "t" failed'
+    assert main.nthLetter("cat", 4) == False, 'nthLetter("cat", 5) == False failed'
+    assert main.nthLetter("discount", 0) == 'd', 'nthLetter("discount", 0) == "d" failed'
 
 def test_late():
     assert datetime.datetime.now() < datetime.datetime(year, month, day + 1, 4, 0), "Submitted Late"
